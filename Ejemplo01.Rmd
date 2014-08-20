@@ -1,0 +1,14 @@
+---
+title: "Primer Reporte en R Markdown"
+author: "Farrera Fonseca Fabiola 124251"
+date: "14 de agosto de 2014"
+output: html_document
+---
+### Introduccion al formato R Markdown
+```{r GenerarHistograma}
+ set.seed(20140811)
+ x <-rnorm(10000, mean = 80, sd = 10)
+hist(x, breaks = 100, border = "white", col = gray(0.7))
+abline(v = mean(x) , col = "blue", lwd = 2)
+```
+
